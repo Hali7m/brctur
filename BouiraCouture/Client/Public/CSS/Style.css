@@ -1,0 +1,198 @@
+
+    body {
+        font-family: 'Amiri', serif;
+    }
+
+
+/* Offcanvas Menu Styles */
+.offcanvas-end {
+    transition: transform 0.5s ease, opacity 0.3s ease;
+}
+
+/* Offcanvas Menu Width for Larger Screens */
+@media (min-width: 992px) {
+    .offcanvas-start {
+        width: 350px; /* Adjust this value as needed */
+    }
+}
+
+/* Offcanvas Menu Width for Smaller Screens */
+@media (max-width: 991px) {
+    .offcanvas-start {
+        width: 300px; /* Adjust this value for smaller screens */
+    }
+}
+
+/* Navbar Styles */
+.navbar {
+    transition: all 0.3s ease;
+}
+
+/* Navbar Toggler */
+.navbar-toggler {
+    display: flex;
+    align-items: center;
+}
+
+/* Navigation Link Styles */
+.nav-link {
+    position: relative;
+    display: inline-block;
+    color: #000000;
+    text-decoration: none;
+    padding-bottom: 5px;
+    font-weight: normal; /* Default font weight */
+    transition: color 0.3s ease-in-out, font-weight 0.3s ease-in-out;
+}
+
+/* Hover Effect for Navigation Links */
+.nav-link::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background-color: #000000; /* Underline color */
+    transition: width 0.3s ease-in-out;
+}
+
+.nav-link:hover {
+    font-weight: bold; /* Bold font on hover */
+}
+
+.nav-link:hover::after {
+    width: 100%; /* Expand underline on hover */
+}
+
+/* Active Link Styles */
+.nav-item.active .nav-link {
+    color: #000000;
+    font-weight: bold;
+    border-bottom: none;
+}
+
+.nav-item.active .nav-link::after {
+    width: 100%;
+}
+
+/* Footer Styles */
+footer ul li a {
+    color: #6c757d;
+    transition: color 0.3s ease;
+}
+
+footer .bg-light {
+    background-color: #f8f9fa !important;
+}
+
+footer .bg-dark {
+    background-color: #343a40 !important;
+}
+
+/* Carousel Styles */
+
+/* Indicators */
+.carousel-indicators .rounded-indicator {
+    background-color: rgba(255, 255, 255, 0.7);
+    width: 10px;
+    height: 10px;
+    margin: 0 6px;
+    border-radius: 50%;
+    transition: background-color 0.3s ease;
+}
+
+/* Fade Transition for Slides */
+.carousel-item {
+    transition: opacity 0.8s ease-in-out;
+}
+
+/* Captions */
+.carousel-caption {
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+    padding: 1rem;
+    border-radius: 8px;
+}
+
+.carousel-caption h5 {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.carousel-caption p {
+    font-size: 1.2rem;
+    color: #e0e0e0;
+}
+
+/* Custom Controls */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: rgba(0, 0, 0, 0.4);
+    border-radius: 50%;
+    padding: 0.5rem;
+    transition: background-color 0.3s ease;
+}
+
+.carousel-control-prev-icon:hover,
+.carousel-control-next-icon:hover {
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .carousel-caption {
+        font-size: 0.9rem;
+    }
+
+    .carousel-caption h5 {
+        font-size: 1.5rem;
+    }
+}
+
+/* Utility Classes */
+
+/* Vertical Line */
+.vertical-line {
+    border-left: 2px solid #000;
+    height: auto;
+    margin: 0 auto;
+}
+
+/* Lead Text */
+.lead {
+    font-size: 1.25rem;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Map Styles */
+.mapouter {
+    position: relative;
+    text-align: center;
+    border-radius: 35px;
+    overflow: hidden;
+}
+
+.gmap_canvas {
+    position: relative;
+    border-radius: 35px;
+    overflow: hidden;
+}
+
+.social-icons a {
+    color: inherit; /* Keeps original color if no hover */
+    transition: color 0.3s; /* Smooth transition */
+}
+
+.social-icons a.facebook {
+    color: #1877f2; /* Facebook Blue */
+}
+
+.social-icons a.instagram {
+    color: #e4405f; /* Instagram Pink */
+}
+
+.social-icons a.twitter {
+    color: #1da1f2; /* Twitter Blue */
+}
